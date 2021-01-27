@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  tweetscraper:
+    build:
+      context: ./twitter_scraper
+    volumes:
+      - ./twitter_scraper/:/src/twitter_scraper/
+    command: python3 run_twitter_scraper.py
+
+  stockscraper:
+    build:
+      context: ./stock_scraper
+    command: python3 scrape_stocks.py
+
+    volumes:
+      - ./stock_scraper/:/src/stock_scraper/

@@ -1,0 +1,8 @@
+.ipynb_checkpoints/
+data/
+env/
+*.pyc
+*.db
+alpha_vantage_api_key.py
+api_tokens.json
+*.ipynb
